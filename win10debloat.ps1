@@ -40,6 +40,7 @@ $tweaks = @(
 	"InstallZoom",
 	"InstallSpotify",
 	"InstallSteam",
+	"InstallWindowsTerminal",
 
 	### Windows Apps
 	"DebloatAll",
@@ -254,6 +255,11 @@ Function InstallSpotify {
 Function InstallSteam {
 	Write-Output "Installing Steam"
 	choco install steam -y
+}
+
+Function InstallWindowsTerminal {
+	Write-Output "Installing Windows Terminal"
+	choco install microsoft-windows-terminal -y
 }
 
 ##########
