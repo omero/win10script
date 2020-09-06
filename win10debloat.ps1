@@ -35,6 +35,11 @@ $tweaks = @(
 	"Install7Zip",
 	"InstallNotepadplusplus",
 	"InstallMediaPlayerClassic",
+	"InstallDiscord",
+	"InstallSlack",
+	"InstallZoom",
+	"InstallSpotify",
+	"InstallSteam",
 
 	### Windows Apps
 	"DebloatAll",
@@ -224,6 +229,31 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallDiscord {
+	Write-Output "Installing Discord"
+	choco install discord -y
+}
+
+Function InstallZoom {
+	Write-Output "Installing Zoom"
+	choco install zoom -y
+}
+
+Function InstallSlack {
+	Write-Output "Installing Slacc"
+	choco install slack -y
+}
+
+Function InstallSpotify {
+	Write-Output "Installing Spotify"
+	choco install spotify -y
+}
+
+Function InstallSteam {
+	Write-Output "Installing Steam"
+	choco install steam -y
 }
 
 ##########
