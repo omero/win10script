@@ -52,6 +52,7 @@ $tweaks = @(
 	"InstallTomighty",
 	"InstallFilezilla",
 	"InstallYubiManager",
+	"InstallWindowsTerminal",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
 
 	### Windows Apps
@@ -346,6 +347,9 @@ Function InstallFilezilla {
 }
 Function InstallYubiManager {
 	Show-Choco-Menu -Title "Do you want to install YubiManager?" -ChocoInstall "yubikey-manager"
+}
+Function InstallWindowsTerminal {
+	Show-Choco-Menu -Title "Do you want to install WindowsTerminal?" -ChocoInstall "microsoft-windows-terminal"
 }
 Function ChangeDefaultApps {
 	Write-Output "Setting Default Programs - Notepad++ Brave VLC IrFanView"
