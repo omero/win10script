@@ -304,10 +304,10 @@ Function InstallIrfanview {
 }
 ######### Omers Apps
 Function InstallSlack {
-	Show-Choco-Menu -Title "Do you want to install Slack?" -ChocoInstall "vscode"
+	Show-Choco-Menu -Title "Do you want to install Slack?" -ChocoInstall "slack"
 }
 Function InstallZoom {
-	Show-Choco-Menu -Title "Do you want to install Zoom?" -ChocoInstall "vscode"
+	Show-Choco-Menu -Title "Do you want to install Zoom?" -ChocoInstall "zoom"
 }
 Function InstallVSCode {
 	Show-Choco-Menu -Title "Do you want to install VisualCode?" -ChocoInstall "vscode"
