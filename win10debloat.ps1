@@ -37,6 +37,21 @@ $tweaks = @(
 	"InstallVLC",
 	"InstallAdobe",
 	"InstallBrave",
+	"InstallSlack",
+	"InstallZoom",
+	"InstallVSCode",
+	"InstallMeld",
+	"InstallInsomnia",
+	"InstallDiscord",
+	"InstallSpotify",
+	"InstallBitwarden",
+	"InstallUbuntu",
+	"InstallSharex",
+	"InstallOneNote",
+	"InstallGrammarly",
+	"InstallTomighty",
+	"InstallFilezilla",
+	"InstallYubiManager",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
 
 	### Windows Apps
@@ -286,7 +301,52 @@ Function InstallVLC {
 Function InstallIrfanview {
 	Show-Choco-Menu -Title "Do you want to install Irfanview?" -ChocoInstall "irfanview"
 }
-
+######### Omers Apps
+Function InstallSlack {
+	Show-Choco-Menu -Title "Do you want to install Slack?" -ChocoInstall "vscode"
+}
+Function InstallZoom {
+	Show-Choco-Menu -Title "Do you want to install Zoom?" -ChocoInstall "vscode"
+}
+Function InstallVSCode {
+	Show-Choco-Menu -Title "Do you want to install VisualCode?" -ChocoInstall "vscode"
+}
+Function InstallMeld {
+	Show-Choco-Menu -Title "Do you want to install Meld?" -ChocoInstall "meld"
+}
+Function InstallInsomnia {
+	Show-Choco-Menu -Title "Do you want to install Insomnia?" -ChocoInstall "insomnia-rest-api-client"
+}
+Function InstallDiscord {
+	Show-Choco-Menu -Title "Do you want to install Discord?" -ChocoInstall "discord"
+}
+Function InstallSpotify {
+	Show-Choco-Menu -Title "Do you want to install Spotify?" -ChocoInstall "spotify"
+}
+Function InstallUbuntu {
+	Show-Choco-Menu -Title "Do you want to install Ubuntu?" -ChocoInstall "wsl-ubuntu-2004"
+}
+Function InstallBitwarden {
+	Show-Choco-Menu -Title "Do you want to install Bitwarden?" -ChocoInstall "bitwarden"
+}
+Function InstallSharex {
+	Show-Choco-Menu -Title "Do you want to install Sharex?" -ChocoInstall "sharex"
+}
+Function InstallOneNote {
+	Show-Choco-Menu -Title "Do you want to install OneNote?" -ChocoInstall "onenote"
+}
+Function InstallGrammarly {
+	Show-Choco-Menu -Title "Do you want to install Grammarly?" -ChocoInstall "grammarly"
+}
+Function InstallTomighty {
+	Show-Choco-Menu -Title "Do you want to install Tomighty?" -ChocoInstall "tomighty"
+}
+Function InstallFilezilla {
+	Show-Choco-Menu -Title "Do you want to install Filezilla?" -ChocoInstall "filezilla"
+}
+Function InstallYubiManager {
+	Show-Choco-Menu -Title "Do you want to install YubiManager?" -ChocoInstall "yubikey-manager"
+}
 Function ChangeDefaultApps {
 	Write-Output "Setting Default Programs - Notepad++ Brave VLC IrFanView"
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/MyDefaultAppAssociations.xml" -Destination $HOME\Desktop\MyDefaultAppAssociations.xml
