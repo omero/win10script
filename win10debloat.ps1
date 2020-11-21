@@ -53,6 +53,7 @@ $tweaks = @(
 	"InstallFilezilla",
 	"InstallYubiManager",
 	"InstallWindowsTerminal",
+	"InstallDockerDesktop",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
 
 	### Windows Apps
@@ -350,6 +351,9 @@ Function InstallYubiManager {
 }
 Function InstallWindowsTerminal {
 	Show-Choco-Menu -Title "Do you want to install WindowsTerminal?" -ChocoInstall "microsoft-windows-terminal"
+}
+Function InstallDockerDesktop{
+	Show-Choco-Menu -Title "Do you want to install Docker Desktop?" -ChocoInstall "docker-desktop"
 }
 Function ChangeDefaultApps {
 	Write-Output "Setting Default Programs - Notepad++ Brave VLC IrFanView"
